@@ -42,4 +42,4 @@ for filename in os.listdir('./cogs'):
 #     await ctx.send("Under maintenance.")
 
 bot.loop.run_until_complete(create_db_pool())
-bot.run("OTU4MDYyMjg0NzIxMjI1NzI4.YkH3CA.xq7MEhMl4e-uCHH2KqMvbLxJYfQ")
+bot.run("TOKEN")
