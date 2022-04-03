@@ -1,15 +1,18 @@
+# Modules
 import discord
 import os
 import asyncpg
 from discord.ext import commands
 # from discord.ext.commands import
 
+# Connecting database
 async def create_db_pool():
-    bot.pg_con = await asyncpg.create_pool(database="medguide",user="postgres",password="abelroy")
+    bot.pg_con = await asyncpg.create_pool(...)
 
 bot = commands.Bot(command_prefix='dr 'or when_mentioned_or)
 # bot.remove_command('help')
 
+# Load/Unload/Reload
 @bot.command()
 async def load(ctx, extension):
     bot.load_extension(f'cogs.{extension}')
@@ -42,4 +45,4 @@ for filename in os.listdir('./cogs'):
 #     await ctx.send("Under maintenance.")
 
 bot.loop.run_until_complete(create_db_pool())
-bot.run("OTU4MDYyMjg0NzIxMjI1NzI4.YkH3CA.xq7MEhMl4e-uCHH2KqMvbLxJYfQ")
+bot.run(TOKEN)
