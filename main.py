@@ -49,4 +49,3 @@ bot.loop.run_until_complete(create_db_pool())
 bot.run(TOKEN)
 =======
 bot.run("TOKEN")
->>>>>>> fafbc6b866da3532972f922f4236671f570972d1
